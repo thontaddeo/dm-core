@@ -111,7 +111,7 @@ group :datamapper do # We need this because we want to pin these dependencies to
   adapters = ENV['ADAPTER'] || ENV['ADAPTERS']
   adapters = adapters.to_s.tr(',', ' ').split.uniq - %w[ in_memory ]
 
-  DO_VERSION     = '~> 0.10.8'
+  DO_VERSION     = '0.10.8'
   DM_DO_ADAPTERS = %w[ sqlite postgres mysql oracle sqlserver ]
 
   if (do_adapters = DM_DO_ADAPTERS & adapters).any?
